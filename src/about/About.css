@@ -1,0 +1,645 @@
+/* =====================================================
+   BY DARINE — ABOUT PAGE
+===================================================== */
+
+.about-page {
+  background: #f7f3ed;
+  color: #3d332d;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.about-intro {
+  min-height: 78vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 100px 7% 120px;
+}
+
+.about-eyebrow {
+  margin: 0 0 30px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #9a8878;
+}
+
+.about-intro h1 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(75px, 10vw, 145px);
+  font-weight: 400;
+
+  line-height: 0.82;
+
+  letter-spacing: -7px;
+
+  color: #3d332d;
+}
+
+.about-intro h1 em {
+  font-weight: 400;
+  font-style: italic;
+
+  color: #8c7969;
+}
+
+.about-intro-line {
+  width: 1px;
+  height: 70px;
+
+  margin: 50px auto 35px;
+
+  background: #b1a093;
+}
+
+.about-intro-text {
+  max-width: 460px;
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+  line-height: 1.9;
+
+  letter-spacing: 0.2px;
+
+  color: #81746b;
+}
+
+
+/* =====================================================
+   MISSION
+===================================================== */
+
+.mission-section {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 140px 7%;
+
+  display: grid;
+
+  grid-template-columns: 120px 1fr;
+
+  gap: 80px;
+
+  border-top: 1px solid rgba(61, 51, 45, 0.16);
+}
+
+
+/* Left side */
+
+.mission-side {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.section-number {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+
+  color: #9a8878;
+}
+
+.vertical-label {
+  margin: 80px 0 0;
+
+  writing-mode: vertical-rl;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  color: #a39181;
+}
+
+
+/* Mission content */
+
+.mission-content {
+  max-width: 850px;
+}
+
+.small-heading {
+  margin: 0 0 25px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+  letter-spacing: 4px;
+
+  color: #9a8878;
+}
+
+.mission-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(55px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -4px;
+}
+
+.mission-content h2 em {
+  font-style: italic;
+  font-weight: 400;
+
+  color: #8c7969;
+}
+
+.mission-divider {
+  width: 45px;
+  height: 1px;
+
+  margin: 45px 0;
+
+  background: #a18f7f;
+}
+
+.mission-text {
+  max-width: 720px;
+
+  margin: 0 0 25px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 2;
+
+  color: #756961;
+}
+
+.mission-signature {
+  margin-top: 50px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(61, 51, 45, 0.15);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #9a8878;
+}
+
+
+/* =====================================================
+   FOUNDER SECTION
+===================================================== */
+
+.founder-section {
+  background: #ebe3d9;
+
+  padding: 130px 8% 150px;
+}
+
+
+/* Top */
+
+.founder-top {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid rgba(61, 51, 45, 0.18);
+}
+
+.founder-top .about-eyebrow {
+  margin: 0;
+}
+
+.founder-number {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+
+  color: #9a8878;
+}
+
+
+/* =====================================================
+   FOUNDER TITLE
+===================================================== */
+
+.founder-title {
+  max-width: 1200px;
+
+  margin: 100px auto 80px;
+}
+
+.founder-title p {
+  margin: 0 0 25px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  color: #9a8878;
+}
+
+.founder-title h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(80px, 12vw, 170px);
+
+  font-weight: 400;
+
+  line-height: 0.75;
+
+  letter-spacing: -8px;
+}
+
+.founder-title h2 em {
+  font-style: italic;
+
+  color: #8c7969;
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.founder-story {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 100px;
+
+  align-items: start;
+}
+
+
+/* Quote */
+
+.founder-quote {
+  padding-top: 5px;
+
+  border-top: 1px solid rgba(61, 51, 45, 0.25);
+}
+
+.founder-quote span {
+  display: block;
+
+  margin-top: 15px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 65px;
+
+  line-height: 0.5;
+
+  color: #9a8878;
+}
+
+.founder-quote p {
+  max-width: 300px;
+
+  margin: 30px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 30px;
+
+  line-height: 1.25;
+
+  font-style: italic;
+
+  color: #4a3d35;
+}
+
+
+/* Story text */
+
+.founder-text {
+  padding-top: 5px;
+}
+
+.founder-text p {
+  margin: 0 0 28px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 2;
+
+  color: #756961;
+}
+
+.founder-text p:nth-child(3) {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 29px;
+
+  line-height: 1.3;
+
+  color: #3d332d;
+}
+
+
+/* =====================================================
+   CLOSING
+===================================================== */
+
+.founder-closing {
+  max-width: 900px;
+
+  margin: 160px auto 0;
+
+  padding-top: 90px;
+
+  border-top: 1px solid rgba(61, 51, 45, 0.18);
+
+  text-align: center;
+}
+
+.founder-closing > p {
+  margin: 0 0 25px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  line-height: 1.8;
+
+  text-transform: uppercase;
+
+  color: #8c7969;
+}
+
+.founder-closing h3 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(45px, 6vw, 75px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+.founder-closing h3 em {
+  font-style: italic;
+
+  color: #8c7969;
+}
+
+.founder-closing span {
+  display: block;
+
+  margin-top: 35px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  font-style: italic;
+
+  color: #9a8878;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+  .about-intro {
+    min-height: 70vh;
+
+    padding: 80px 7% 100px;
+  }
+
+  .about-intro h1 {
+    letter-spacing: -4px;
+  }
+
+  .mission-section {
+    padding: 100px 7%;
+
+    grid-template-columns: 60px 1fr;
+
+    gap: 40px;
+  }
+
+  .mission-content h2 {
+    letter-spacing: -3px;
+  }
+
+  .founder-section {
+    padding: 100px 7% 120px;
+  }
+
+  .founder-title {
+    margin: 75px auto 65px;
+  }
+
+  .founder-title h2 {
+    letter-spacing: -5px;
+  }
+
+  .founder-story {
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 50px;
+  }
+
+  .founder-quote p {
+    font-size: 25px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .about-intro {
+    min-height: 70vh;
+
+    padding: 75px 25px 90px;
+  }
+
+  .about-eyebrow {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+  }
+
+  .about-intro h1 {
+    font-size: 70px;
+
+    letter-spacing: -4px;
+
+    line-height: 0.85;
+  }
+
+  .about-intro-line {
+    height: 50px;
+
+    margin: 40px auto 25px;
+  }
+
+  .about-intro-text {
+    font-size: 12px;
+  }
+
+
+  /* Mission */
+
+  .mission-section {
+    display: block;
+
+    padding: 85px 25px;
+  }
+
+  .mission-side {
+    display: block;
+
+    margin-bottom: 45px;
+  }
+
+  .vertical-label {
+    display: none;
+  }
+
+  .mission-content h2 {
+    font-size: 53px;
+
+    letter-spacing: -3px;
+  }
+
+  .mission-divider {
+    margin: 35px 0;
+  }
+
+  .mission-text {
+    font-size: 13px;
+
+    line-height: 1.9;
+  }
+
+  .mission-signature {
+    margin-top: 40px;
+  }
+
+
+  /* Founder */
+
+  .founder-section {
+    padding: 75px 25px 90px;
+  }
+
+  .founder-title {
+    margin: 65px 0 55px;
+  }
+
+  .founder-title h2 {
+    font-size: 75px;
+
+    letter-spacing: -4px;
+  }
+
+  .founder-story {
+    display: block;
+  }
+
+  .founder-quote {
+    margin-bottom: 55px;
+  }
+
+  .founder-quote p {
+    max-width: 330px;
+
+    font-size: 25px;
+  }
+
+  .founder-text p {
+    font-size: 13px;
+
+    line-height: 1.9;
+  }
+
+  .founder-text p:nth-child(3) {
+    font-size: 25px;
+  }
+
+
+  /* Closing */
+
+  .founder-closing {
+    margin-top: 90px;
+
+    padding-top: 65px;
+  }
+
+  .founder-closing h3 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+}
