@@ -1,4 +1,4 @@
-import "./FeaturedProducts.css";
+import "./Featuredproducts.css";
 import { Link } from "react-router-dom";
 import soft from "./softangel.jpg";
 import scrunchie from "./scrunchie.jpg";
