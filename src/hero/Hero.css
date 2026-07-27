@@ -1,0 +1,236 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  background: #f8f4ee;
+  gap: 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-tag {
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  color: #8c7765;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.08;
+  font-weight: 400;
+  color: #3e332c;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #75675d;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #3e332c;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #5b4b40;
+}
+
+.secondary-btn {
+  border: 1px solid #3e332c;
+  color: #3e332c;
+}
+
+.secondary-btn:hover {
+  background: #3e332c;
+  color: white;
+}
+
+.hero-image {
+  width: 48%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   SOFT ANGEL SECTION
+========================= */
+
+.soft-angel-section {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px 10%;
+  background: #eee7dd;
+}
+
+.soft-angel-image {
+  width: 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.soft-angel-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.soft-angel-content {
+  max-width: 500px;
+}
+
+.soft-angel-tag {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #8c7765;
+  margin-bottom: 20px;
+}
+
+.soft-angel-content h2 {
+  font-size: 52px;
+  font-weight: 400;
+  color: #3e332c;
+  margin: 0 0 25px;
+}
+
+.soft-angel-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #75675d;
+  margin-bottom: 30px;
+}
+
+.soft-angel-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #3e332c;
+  color: white;
+  padding: 14px 28px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.soft-angel-btn:hover {
+  background: #5b4b40;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 7%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    height: 450px;
+  }
+
+  .soft-angel-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    padding: 80px 7%;
+  }
+
+  .soft-angel-image {
+    width: 80%;
+  }
+
+  .soft-angel-content h2 {
+    font-size: 42px;
+  }
+
+}.product-features {
+  margin-top: 35px;
+}
+
+.features-title {
+  font-size: 13px !important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #8c7765 !important;
+  margin-bottom: 18px !important;
+}
+
+.product-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 30px;
+}
+
+.product-features li {
+  font-size: 14px;
+  color: #75675d;
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.product-features li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #8c7765;
+  font-size: 10px;
+  top: 3px;
+}
