@@ -4,7 +4,7 @@
 
 .products-page {
   min-height: 100vh;
-  background: #f7f3ed;
+  background: white;
   color: #3d332d;
   padding: 65px 6% 100px;
 }
@@ -53,7 +53,7 @@
 
   margin: 22px auto 0;
 
-  background: #9a8878;
+  background: white;
 }
 
 
@@ -116,7 +116,7 @@
 
   overflow: hidden;
 
-  background: #eee7de;
+  background: white;
 }
 
 .product-image-container img {

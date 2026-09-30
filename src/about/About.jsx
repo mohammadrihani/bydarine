@@ -5,80 +5,44 @@ export default function About() {
     <main className="about-page">
 
       {/* =========================================
-          INTRO
-      ========================================= */}
-
-      <section className="about-intro">
-
-        <p className="about-eyebrow">
-          THE BY DARINE STORY
-        </p>
-
-        <h1>
-          Beauty,
-          <br />
-          <em>made real.</em>
-        </h1>
-
-        <div className="about-intro-line"></div>
-
-       
-
-      </section>
-
-
-      {/* =========================================
           MISSION
       ========================================= */}
 
       <section className="mission-section">
 
-        <div className="mission-side">
-
-          <span className="section-number">
-            01
-          </span>
-
-          <p className="vertical-label">
-            OUR MISSION
-          </p>
-
+        <div className="mission-label">
+          <p>OUR MISSION</p>
         </div>
-
 
         <div className="mission-content">
 
           <p className="small-heading">
-            MISSION
+         
           </p>
 
-          <h2>
-            Redefining
-            <br />
-            <em>everyday beauty.</em>
-          </h2>
+          <div className="mission-text">
 
-          <div className="mission-divider"></div>
+            <p>
+              BY DARINE is on a mission to redefine everyday
+              beauty for women living in real conditions from
+              Beirut’s humidity to busy modern lifestyles by
+              creating thoughtfully crafted hair essentials
+              that keep hair looking healthy, beautiful, and
+              effortlessly polished.
+            </p>
 
-          <p className="mission-text">
-            BY DARINE is on a mission to redefine everyday
-            beauty for women living in real conditions—from
-            Beirut’s humidity to busy modern lifestyles—by
-            creating thoughtfully crafted hair essentials
-            that keep hair looking healthy, beautiful, and
-            effortlessly polished.
-          </p>
+            <p>
+              Because beauty should never feel like a burden.
+              It should feel effortless, lasting, and empowering
+              giving you the confidence and elegance to walk into
+              any room feeling your absolute best.
+            </p>
 
-          <p className="mission-text">
-            Because beauty should never feel like a burden.
-            It should feel effortless, lasting, and empowering—
-            giving you the confidence and elegance to walk into
-            any room feeling your absolute best.
-          </p>
-
-          <div className="mission-signature">
-            <span>BEAUTY, WITHOUT COMPROMISE.</span>
           </div>
+
+          <p className="mission-signature">
+            BEAUTY, WITHOUT COMPROMISE.
+          </p>
 
         </div>
 
@@ -91,15 +55,9 @@ export default function About() {
 
       <section className="founder-section">
 
-        <div className="founder-top">
+        <div className="founder-header">
 
-          <p className="about-eyebrow">
-            THE FOUNDER STORY
-          </p>
-
-          <span className="founder-number">
-            02
-          </span>
+          <p>THE FOUNDER STORY</p>
 
         </div>
 
@@ -120,11 +78,12 @@ export default function About() {
         <div className="founder-story">
 
           <div className="founder-quote">
-            <span>“</span>
+
+            <span></span>
 
             <p>
-              I wanted something lightweight
-              that I could take anywhere.
+              "I wanted something lightweight
+              that I could take anywhere."
             </p>
 
           </div>
@@ -151,35 +110,12 @@ export default function About() {
 
             <p>
               I wanted something lightweight that I
-              could take anywhere—something that
+              could take anywhere something that
               instantly smoothed frizz, left my hair
               feeling soft, and never weighed it down.
             </p>
 
           </div>
-
-        </div>
-
-
-        {/* =========================================
-            CLOSING STATEMENT
-        ========================================= */}
-
-        <div className="founder-closing">
-
-          <p>
-            Soft Angel isn’t just
-            <br />
-            a hair product.
-          </p>
-
-          <h3>
-            It’s your everyday
-            <br />
-            <em>confidence, bottled.</em>
-          </h3>
-
-          <span>— By Darine</span>
 
         </div>
 

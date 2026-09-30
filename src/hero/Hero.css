@@ -1,43 +1,72 @@
-/* =========================
+/* =========================================================
    HERO SECTION
-========================= */
+========================================================= */
 
 .hero {
   min-height: 85vh;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 80px 8%;
-  background: #f8f4ee;
+
+  background: #ffffff;
+
   gap: 60px;
+
+  box-sizing: border-box;
 }
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
 
 .hero-content {
   max-width: 600px;
 }
 
 .hero-tag {
+  font-family: Arial, sans-serif;
   font-size: 13px;
   letter-spacing: 4px;
+
   margin-bottom: 25px;
-  color: #8c7765;
+
+  color: #6b4226;
 }
 
 .hero h1 {
+  font-family: "Playfair Display", Georgia, serif;
+
   font-size: 64px;
   line-height: 1.08;
+
   font-weight: 400;
-  color: #3e332c;
-  margin-bottom: 30px;
+
+  color: #6b4226;
+
+  margin: 0 0 30px;
 }
 
 .hero-text {
   max-width: 500px;
+
+  font-family: Arial, sans-serif;
+
   font-size: 17px;
   line-height: 1.8;
-  color: #75675d;
+
+  color: #6b4226;
+
   margin-bottom: 35px;
 }
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
 
 .hero-buttons {
   display: flex;
@@ -47,29 +76,42 @@
 .primary-btn,
 .secondary-btn {
   text-decoration: none;
+
   padding: 14px 28px;
+
+  font-family: Arial, sans-serif;
+
   font-size: 14px;
+
   transition: 0.3s ease;
 }
 
 .primary-btn {
-  background: #3e332c;
-  color: white;
+  background: #6b4226;
+  color: #ffffff;
 }
 
 .primary-btn:hover {
-  background: #5b4b40;
+  background: #5b3922;
 }
 
 .secondary-btn {
-  border: 1px solid #3e332c;
-  color: #3e332c;
+  border: 1px solid #6b4226;
+
+  color: #6b4226;
+
+  background: #ffffff;
 }
 
 .secondary-btn:hover {
-  background: #3e332c;
-  color: white;
+  background: #6b4226;
+  color: #ffffff;
 }
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
 
 .hero-image {
   width: 48%;
@@ -78,87 +120,283 @@
 .hero-image img {
   width: 100%;
   height: 650px;
+
   object-fit: cover;
+
   display: block;
 }
 
 
-/* =========================
+/* =========================================================
    SOFT ANGEL SECTION
-========================= */
+========================================================= */
 
 .soft-angel-section {
   min-height: 650px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 100px;
+
   padding: 100px 10%;
-  background: #eee7dd;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
 }
+
+
+/* =========================================================
+   SOFT ANGEL IMAGE
+========================================================= */
 
 .soft-angel-image {
   width: 420px;
+
   display: flex;
   justify-content: center;
 }
 
 .soft-angel-image img {
   width: 100%;
+
   max-height: 500px;
+
   object-fit: contain;
+
+  display: block;
 }
+
+
+/* =========================================================
+   SOFT ANGEL CONTENT
+========================================================= */
 
 .soft-angel-content {
   max-width: 500px;
-}
-
-.soft-angel-tag {
-  font-size: 12px;
-  letter-spacing: 4px;
-  color: #8c7765;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .soft-angel-content h2 {
+  font-family: "Playfair Display", Georgia, serif;
+
   font-size: 52px;
+
   font-weight: 400;
-  color: #3e332c;
-  margin: 0 0 25px;
+
+  color: #6b4226;
+
+  margin: 0 0 35px;
+
+  line-height: 1.1;
 }
 
-.soft-angel-content p {
-  font-size: 16px;
-  line-height: 1.9;
-  color: #75675d;
-  margin-bottom: 30px;
+
+/* =========================================================
+   INFORMATION SECTIONS
+========================================================= */
+
+.info-section {
+  width: 100%;
+  margin-top: 0;
 }
 
-.soft-angel-btn {
+
+/* =========================================================
+   INFORMATION BUTTON
+========================================================= */
+
+.info-button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 0;
+
+  background: #ffffff;
+
+  border: none;
+  border-top: 1px solid #d8ccc2;
+
+  color: #6b4226;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.info-section:last-child .info-button {
+  border-bottom: 1px solid #d8ccc2;
+}
+
+.info-button:hover {
+  color: #6b4226;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.arrow {
   display: inline-block;
-  text-decoration: none;
-  background: #3e332c;
-  color: white;
-  padding: 14px 28px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  color: #6b4226;
+
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   DROPDOWN CONTENT
+========================================================= */
+
+.info-content {
+  padding: 10px 0 25px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 35px;
+
+  row-gap: 10px;
+
+  background: #ffffff;
+}
+
+.info-content p {
+  margin: 0;
+
+  padding: 3px 0;
+
+  font-family: Arial, sans-serif;
+
   font-size: 14px;
-  transition: 0.3s ease;
+
+  line-height: 1.6;
+
+  color: #6b4226;
 }
 
-.soft-angel-btn:hover {
-  background: #5b4b40;
+
+/* =========================================================
+   HOW TO USE SOFT ANGEL
+========================================================= */
+
+.how-to-use-section {
+  background: #ffffff;
+
+  padding: 130px 8% 150px;
+
+  box-sizing: border-box;
 }
 
 
-/* =========================
+/* =========================================================
+   TITLE
+========================================================= */
+
+.how-to-use-content {
+  max-width: 1200px;
+
+  margin: 0 auto 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.how-to-use-content h2 {
+  margin: 0;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 64px;
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -1px;
+
+  color: #6b4226;
+}
+
+.how-to-use-content h2 em {
+  font-style: italic;
+
+  color: #6b4226;
+}
+
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
+.how-to-use-video {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.how-to-use-video video {
+  width: 100%;
+
+  display: block;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
    MOBILE
-========================= */
+========================================================= */
 
 @media (max-width: 800px) {
 
   .hero {
     flex-direction: column;
+
     padding: 60px 7%;
+
     text-align: center;
+
+    gap: 50px;
+  }
+
+  .hero-content {
+    max-width: 600px;
   }
 
   .hero h1 {
@@ -168,6 +406,8 @@
   .hero-text {
     margin-left: auto;
     margin-right: auto;
+
+    font-size: 16px;
   }
 
   .hero-buttons {
@@ -182,10 +422,18 @@
     height: 450px;
   }
 
+
+  /* =====================================================
+     SOFT ANGEL
+  ===================================================== */
+
   .soft-angel-section {
     flex-direction: column;
+
     text-align: center;
+
     gap: 50px;
+
     padding: 80px 7%;
   }
 
@@ -193,44 +441,143 @@
     width: 80%;
   }
 
+  .soft-angel-content {
+    width: 100%;
+  }
+
   .soft-angel-content h2 {
     font-size: 42px;
   }
 
-}.product-features {
-  margin-top: 35px;
+
+  /* =====================================================
+     INFO BUTTONS
+  ===================================================== */
+
+  .info-button {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .info-content {
+    grid-template-columns: 1fr;
+
+    text-align: left;
+
+    row-gap: 8px;
+  }
+
+
+  /* =====================================================
+     HOW TO USE
+  ===================================================== */
+
+  .how-to-use-section {
+    padding: 90px 7% 110px;
+  }
+
+  .how-to-use-content {
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+
+  .how-to-use-content h2 {
+    font-size: 48px;
+
+    line-height: 0.98;
+  }
+
+  .how-to-use-video video {
+    aspect-ratio: 16 / 10;
+  }
 }
 
-.features-title {
-  font-size: 13px !important;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #8c7765 !important;
-  margin-bottom: 18px !important;
-}
 
-.product-features ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 30px;
-}
+/* =========================================================
+   SMALL PHONES
+========================================================= */
 
-.product-features li {
-  font-size: 14px;
-  color: #75675d;
-  padding-left: 18px;
-  position: relative;
-  line-height: 1.5;
-}
+@media (max-width: 500px) {
 
-.product-features li::before {
-  content: "✦";
-  position: absolute;
-  left: 0;
-  color: #8c7765;
-  font-size: 10px;
-  top: 3px;
+  .hero {
+    padding: 50px 6%;
+  }
+
+  .hero-tag {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .hero-image img {
+    height: 380px;
+  }
+
+
+  /* =====================================================
+     SOFT ANGEL
+  ===================================================== */
+
+  .soft-angel-section {
+    padding: 60px 6%;
+  }
+
+  .soft-angel-image {
+    width: 90%;
+  }
+
+  .soft-angel-content h2 {
+    font-size: 36px;
+  }
+
+
+  /* =====================================================
+     INFO
+  ===================================================== */
+
+  .info-button {
+    padding: 17px 0;
+
+    font-size: 15px;
+  }
+
+  .info-content p {
+    font-size: 13px;
+  }
+
+
+  /* =====================================================
+     HOW TO USE
+  ===================================================== */
+
+  .how-to-use-section {
+    padding: 70px 6% 85px;
+  }
+
+  .how-to-use-content {
+    margin-bottom: 30px;
+
+    text-align: center;
+  }
+
+  .how-to-use-content h2 {
+    font-size: 39px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .how-to-use-video video {
+    aspect-ratio: 4 / 5;
+  }
 }

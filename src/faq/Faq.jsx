@@ -94,11 +94,7 @@ export default function Faq() {
           Hair is confidence.
         </h3>
 
-        <p>
-          Soft Angel is your everyday finish
-          <br />
-          of effortless beauty.
-        </p>
+        
 
         <span>— By Darine</span>
 

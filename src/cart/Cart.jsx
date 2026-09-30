@@ -11,18 +11,15 @@ export default function Cart() {
     email: "",
   });
 
-  // =========================================
-  // TOTAL
-  // =========================================
-
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.qty,
     0
   );
 
-  // =========================================
-  // CUSTOMER INPUT
-  // =========================================
+  const itemCount = cart.reduce(
+    (sum, item) => sum + item.qty,
+    0
+  );
 
   const handleChange = (e) => {
     setCustomer({
@@ -30,10 +27,6 @@ export default function Cart() {
       [e.target.name]: e.target.value,
     });
   };
-
-  // =========================================
-  // WHATSAPP ORDER
-  // =========================================
 
   const sendWhatsApp = (e) => {
     e.preventDefault();
@@ -68,10 +61,6 @@ export default function Cart() {
 
     window.open(whatsappURL, "_blank");
   };
-
-  // =========================================
-  // EMAIL ORDER — GMAIL
-  // =========================================
 
   const sendEmail = () => {
     if (!customer.name || !customer.phone || !customer.email) {
@@ -119,194 +108,189 @@ Thank you!
   return (
     <main className="cart-page">
 
-      {/* =========================================
-          HEADER
-      ========================================= */}
+      {/* =========================
+          PAGE INTRO
+      ========================== */}
 
-      <section className="cart-header">
+      <section className="cart-intro">
 
-        <p>BY DARINE</p>
+        <div className="cart-intro-top">
+          <span>BYDARINE</span>
+          <span>{itemCount} {itemCount === 1 ? "ITEM" : "ITEMS"}</span>
+        </div>
 
-        <h1>
-          Your
-          <br />
-          <em>Selection.</em>
-        </h1>
+       
 
-        <span>
-          Your carefully chosen ByDarine essentials.
-        </span>
+       
 
       </section>
 
 
-      {/* =========================================
+      {/* =========================
           EMPTY CART
-      ========================================= */}
+      ========================== */}
 
       {cart.length === 0 ? (
 
         <section className="empty-cart">
 
-          <div className="empty-symbol">
-            ✦
+          <div className="empty-cart-mark">
+            +
           </div>
 
           <h2>
-            Your cart is waiting.
+            Nothing here yet.
           </h2>
 
           <p>
-            Discover something beautiful and
-            make it part of your everyday ritual.
+            Your next hair ritual is waiting to be discovered.
           </p>
 
           <a href="/products">
-            Discover the collection
+            Explore ByDarine
           </a>
 
         </section>
 
       ) : (
 
-        <section className="cart-layout">
+        <section className="cart-container">
 
-          {/* =========================================
-              CART ITEMS
-          ========================================= */}
+          {/* =========================
+              PRODUCTS
+          ========================== */}
 
-          <div className="cart-items">
+          <div className="products-column">
 
-            <div className="cart-items-header">
-
-              <span>
-                Your Selection
-              </span>
-
-              <span>
-                {cart.reduce(
-                  (total, item) => total + item.qty,
-                  0
-                )}{" "}
-                {cart.reduce(
-                  (total, item) => total + item.qty,
-                  0
-                ) === 1
-                  ? "item"
-                  : "items"}
-              </span>
-
+            <div className="products-heading">
+              <span>Your products</span>
+              <span>{itemCount} {itemCount === 1 ? "item" : "items"}</span>
             </div>
 
+            <div className="product-list">
 
-            {/* PRODUCTS */}
+              {cart.map((item) => (
 
-            {cart.map((item) => (
+                <article
+                  className="cart-product"
+                  key={item.id}
+                >
 
-              <div
-                className="cart-item"
-                key={item.id}
-              >
+                  <div className="cart-product-image">
 
-                {/* PRODUCT IMAGE */}
+                    {item.image ? (
 
-                <div className="cart-product-image">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                      />
 
-                  {item.image ? (
+                    ) : (
 
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                    />
+                      <div className="image-placeholder">
+                        BYDARINE
+                      </div>
 
-                  ) : (
+                    )}
 
-                    <div className="image-placeholder">
-                      BY DARINE
+                  </div>
+
+
+                  <div className="cart-product-info">
+
+                    <div>
+
+                      <p className="product-small-label">
+                        HAIRCARE
+                      </p>
+
+                      <h2>
+                        {item.name}
+                      </h2>
+
+                      <p className="product-description">
+                        A luxurious addition to your
+                        everyday hair ritual.
+                      </p>
+
                     </div>
 
-                  )}
 
-                </div>
+                    <div className="product-bottom">
+
+                      <div className="quantity-display">
+                        <span>QTY</span>
+                        <strong>{item.qty}</strong>
+                      </div>
+
+                      <button
+                        className="remove-product"
+                        onClick={() =>
+                          removeFromCart(item.id)
+                        }
+                      >
+                        Remove
+                      </button>
+
+                    </div>
+
+                  </div>
 
 
-                {/* PRODUCT DETAILS */}
+                  <div className="product-price">
 
-                <div className="cart-product-details">
-
-                  <p className="cart-product-label">
-                    BY DARINE
-                  </p>
-
-                  <h2>
-                    {item.name}
-                  </h2>
-
-                  <p className="cart-quantity">
-                    Quantity{" "}
                     <span>
-                      × {item.qty}
+                      PRICE
                     </span>
-                  </p>
 
-                  <button
-                    className="remove-button"
-                    onClick={() =>
-                      removeFromCart(item.id)
-                    }
-                  >
-                    Remove
-                  </button>
+                    <strong>
+                      $
+                      {(
+                        item.price * item.qty
+                      ).toFixed(2)}
+                    </strong>
 
-                </div>
+                  </div>
 
+                </article>
 
-                {/* PRICE */}
+              ))}
 
-                <div className="cart-product-price">
-
-                  $
-                  {(
-                    item.price * item.qty
-                  ).toFixed(2)}
-
-                </div>
-
-              </div>
-
-            ))}
+            </div>
 
           </div>
 
 
-          {/* =========================================
-              CHECKOUT CARD
-          ========================================= */}
+          {/* =========================
+              CHECKOUT
+          ========================== */}
 
-          <aside className="checkout-card">
+          <aside className="checkout-panel">
 
-            <div className="checkout-heading">
+            <div className="checkout-top">
 
-              <p>
-                ORDER DETAILS
-              </p>
+              <span className="checkout-label">
+                CHECKOUT
+              </span>
 
               <h2>
-                Complete
+                Almost
                 <br />
-                <em>your order.</em>
+                <em>yours.</em>
               </h2>
+
+              <p>
+                Complete your details and
+                choose how you'd like to place
+                your order.
+              </p>
 
             </div>
 
 
-            {/* CUSTOMER FORM */}
-
             <form onSubmit={sendWhatsApp}>
 
-              {/* NAME */}
-
-              <div className="form-group">
+              <div className="form-field">
 
                 <label htmlFor="name">
                   Full Name
@@ -325,9 +309,7 @@ Thank you!
               </div>
 
 
-              {/* PHONE */}
-
-              <div className="form-group">
+              <div className="form-field">
 
                 <label htmlFor="phone">
                   Phone Number
@@ -346,9 +328,7 @@ Thank you!
               </div>
 
 
-              {/* EMAIL */}
-
-              <div className="form-group">
+              <div className="form-field">
 
                 <label htmlFor="email">
                   Email Address
@@ -367,16 +347,9 @@ Thank you!
               </div>
 
 
-              {/* DIVIDER */}
+              <div className="order-summary">
 
-              <div className="checkout-divider"></div>
-
-
-              {/* SUMMARY */}
-
-              <div className="checkout-summary">
-
-                <div>
+                <div className="summary-row">
                   <span>
                     Subtotal
                   </span>
@@ -386,7 +359,8 @@ Thank you!
                   </span>
                 </div>
 
-                <div>
+
+                <div className="summary-row">
                   <span>
                     Delivery
                   </span>
@@ -396,70 +370,52 @@ Thank you!
                   </span>
                 </div>
 
-              </div>
 
+                <div className="summary-total">
+                  <span>
+                    Total
+                  </span>
 
-              {/* TOTAL */}
-
-              <div className="checkout-total">
-
-                <span>
-                  Total
-                </span>
-
-                <strong>
-                  ${total.toFixed(2)}
-                </strong>
+                  <strong>
+                    ${total.toFixed(2)}
+                  </strong>
+                </div>
 
               </div>
 
-
-              {/* =========================================
-                  WHATSAPP BUTTON
-              ========================================= */}
 
               <button
                 type="submit"
-                className="whatsapp-btn"
+                className="order-whatsapp"
               >
-
                 <span>
                   Order on WhatsApp
                 </span>
 
-                <span className="button-arrow">
+                <span>
                   →
                 </span>
-
               </button>
 
 
-              {/* =========================================
-                  EMAIL BUTTON
-              ========================================= */}
-
               <button
                 type="button"
-                className="email-btn"
+                className="order-email"
                 onClick={sendEmail}
               >
-
                 <span>
                   Order via Email
                 </span>
 
-                <span className="button-arrow">
+                <span>
                   →
                 </span>
-
               </button>
 
 
-              {/* NOTE */}
-
-              <p className="checkout-note">
-                Your order details will be sent
-                directly to ByDarine.
+              <p className="checkout-footer">
+                Your information is only used
+                to process your ByDarine order.
               </p>
 
             </form>

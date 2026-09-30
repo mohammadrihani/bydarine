@@ -8,6 +8,7 @@ import Products from "./products/Products";
 import About from "./about/About";
 import Cart from "./cart/Cart";
 import Faq from "./faq/Faq";
+  
 
 function App() {
   return (
