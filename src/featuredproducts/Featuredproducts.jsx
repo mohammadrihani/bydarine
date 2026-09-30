@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import "./Featuredproducts.css";
+=======
+import "./FeaturedProducts.css";
+>>>>>>> feadba1601952129a5a1896e8f09748f4efd2a5e
 import { Link } from "react-router-dom";
 import soft from "./softangel.jpg";
 import scrunchie from "./scrunchie.jpg";

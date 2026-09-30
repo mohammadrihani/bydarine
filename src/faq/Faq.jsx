@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import "./faq.css";
+=======
+import "./FAQ.css";
+>>>>>>> feadba1601952129a5a1896e8f09748f4efd2a5e
 
 const faqs = [
   {
