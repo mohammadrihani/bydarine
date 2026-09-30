@@ -8,7 +8,10 @@ export default function Footer() {
 
         {/* Brand */}
         <div className="footer-brand">
-          <h2>ByDarine</h2>
+         <div className="footer-logo">
+  <span className="footer-logo-bd">BD</span>
+  <span className="footer-logo-name">BYDARINE</span>
+</div>
         
         </div>
 

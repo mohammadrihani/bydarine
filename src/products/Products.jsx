@@ -1,9 +1,9 @@
 import "./Products.css";
 import { useCart } from "../Cartcontext";
 
-import soft from "./softangel.jpg";
-import scrunchie from "./scrunchie.jpg";
-import combo from "./combo.jpg";
+import soft from "./softa.jpeg";
+import scrunchie from "./scrunchie.jpeg";
+import duo from "./duo.jpeg";
 
 const productData = [
   {
@@ -27,7 +27,7 @@ const productData = [
     name: "Angel Duo",
     originalPrice: 35,
     price: 28,
-    image: combo,
+    image: duo,
     discounted: true,
   },
 ];

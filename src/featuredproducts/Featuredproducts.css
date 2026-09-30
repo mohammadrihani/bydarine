@@ -1,5 +1,7 @@
+
+
 .featured-products{
-    background:#F8F4EF;
+    background:white;
     padding:120px 8%;
     text-align:center;
 }
@@ -30,10 +32,11 @@
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:35px;
+    background: white;
 }
 
 .product-card{
-    background:#ffffff;
+    background:white;
     border-radius:24px;
     overflow:hidden;
     box-shadow:0 15px 40px rgba(0,0,0,0.05);
@@ -75,7 +78,7 @@
 }
 
 .collection-btn:hover{
-    background:#B89B5E;
+    background:white;
 }
 
 @media(max-width:900px){
