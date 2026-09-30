@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import "./faq.css";
-=======
 import "./FAQ.css";
->>>>>>> feadba1601952129a5a1896e8f09748f4efd2a5e
 
 const faqs = [
   {
@@ -28,7 +24,7 @@ const faqs = [
   {
     question: "What does it smell like?",
     answer:
-      "Delicately infused with the the comforting scent of warm vanilla cream, leaving your hair beautifully fragranced throughout the day.",
+      "Delicately infused with the comforting scent of warm vanilla cream, leaving your hair beautifully fragranced throughout the day.",
   },
   {
     question: "Can I use it daily?",
@@ -38,14 +34,14 @@ const faqs = [
   {
     question: "Who is it for?",
     answer:
-      "Created for anyone who wants their hair to feel as beautiful  as it looks, soft, smooth, and effortlessly polished.",
+      "Created for anyone who wants their hair to feel as beautiful as it looks, soft, smooth, and effortlessly polished.",
   },
 ];
 
 export default function Faq() {
   return (
     <section className="faq-section">
-
+      
       {/* Header */}
       <div className="faq-header">
         <p className="faq-eyebrow">BY DARINE — SOFT ANGEL</p>
@@ -57,14 +53,11 @@ export default function Faq() {
         </h2>
 
         <div className="faq-line"></div>
-
-        
       </div>
 
 
       {/* Questions */}
       <div className="faq-list">
-
         {faqs.map((faq, index) => (
           <div className="faq-item" key={faq.question}>
 
@@ -81,7 +74,6 @@ export default function Faq() {
 
           </div>
         ))}
-
       </div>
 
 
@@ -98,7 +90,11 @@ export default function Faq() {
           Hair is confidence.
         </h3>
 
-        
+        <p>
+          Soft Angel is your everyday finish
+          <br />
+          of effortless beauty.
+        </p>
 
         <span>— By Darine</span>
 
