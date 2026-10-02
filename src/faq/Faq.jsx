@@ -1,4 +1,4 @@
-import "./FAQ.css";
+import "./faq.css";
 
 const faqs = [
   {
