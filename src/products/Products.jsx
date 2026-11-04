@@ -10,7 +10,7 @@ const productData = [
     id: 1,
     name: "Soft Angel",
     originalPrice: 32,
-    price: 27,
+    price: 19.99,
     image: soft,
     discounted: true,
   },
