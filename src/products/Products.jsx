@@ -26,7 +26,7 @@ const productData = [
     id: 3,
     name: "Angel Duo",
     originalPrice: 35,
-    price: 28,
+    price: 21,
     image: duo,
     discounted: true,
   },
